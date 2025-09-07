@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Architecture Design",
+    "description": "Custom architectural designs tailored to your vision and lifestyle.",
+    "icon": "Home"
+  },
+  {
+    "id": 2,
+    "title": "Construction",
+    "description": "High-quality construction using premium materials and modern techniques.",
+    "icon": "Hammer"
+  },
+  {
+    "id": 3,
+    "title": "Interior Design",
+    "description": "Beautiful interior designs that reflect your personality and style.",
+    "icon": "Palette"
+  },
+  {
+    "id": 4,
+    "title": "Custom Villas",
+    "description": "Bespoke villa designs for luxury living and unique requirements.",
+    "icon": "Castle"
+  }
+]

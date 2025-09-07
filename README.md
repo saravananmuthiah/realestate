@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SK Promoters - Real Estate Website
+
+A modern, responsive React.js website for SK Promoters, a real estate company based in Coimbatore, Tamil Nadu, specializing in building beautiful individual houses in Coimbatore and Udumalaipettai.
+
+## Features
+
+- **Next.js 15** with App Router and TypeScript
+- **Tailwind CSS** for modern, responsive styling
+- **shadcn/ui** for reusable UI components
+- **Framer Motion** for smooth animations
+- **React Hook Form** with Zod validation
+- Mobile-first responsive design
+- SEO-friendly structure
+
+## Pages
+
+- **Home**: Hero banner, featured projects showcase, CTA
+- **About**: Company story, mission, vision, values, team
+- **Projects**: Grid portfolio of completed houses
+- **Services**: List of architectural and construction services
+- **Testimonials**: Carousel of client reviews
+- **Contact**: Contact form with validation and Google Maps
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- Next.js 15
+- React 18
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- React Hook Form
+- Zod
+- Lucide React
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                 # Next.js app router pages
+├── components/          # Reusable React components
+│   ├── ui/             # shadcn/ui components
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   └── Hero.tsx
+└── lib/
+    ├── data/           # JSON data files
+    └── utils.ts        # Utility functions
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The project can be deployed on Vercel, Netlify, or any platform supporting Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is for demonstration purposes.

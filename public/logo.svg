@@ -1,0 +1,61 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- House silhouette -->
+  <g transform="translate(15, 15)">
+    <!-- Main house body -->
+    <rect x="20" y="25" width="50" height="30" fill="url(#accentGradient)" stroke="url(#logoGradient)" stroke-width="2" rx="2"/>
+    <!-- Roof -->
+    <polygon points="15,25 45,10 75,25" fill="url(#logoGradient)" stroke="url(#accentGradient)" stroke-width="2"/>
+    <!-- Door -->
+    <rect x="38" y="35" width="12" height="20" fill="url(#logoGradient)" stroke="url(#accentGradient)" stroke-width="1" rx="1"/>
+    <circle cx="41" cy="42" r="1.5" fill="url(#accentGradient)"/>
+    <!-- Windows -->
+    <rect x="25" y="30" width="8" height="8" fill="#ffffff" stroke="url(#accentGradient)" stroke-width="1" rx="1"/>
+    <rect x="55" y="30" width="8" height="8" fill="#ffffff" stroke="url(#accentGradient)" stroke-width="1" rx="1"/>
+    <!-- Chimney -->
+    <rect x="60" y="12" width="4" height="12" fill="url(#accentGradient)" stroke="url(#logoGradient)" stroke-width="1"/>
+    <!-- Window panes -->
+    <line x1="29" y1="30" x2="29" y2="38" stroke="url(#accentGradient)" stroke-width="0.5"/>
+    <line x1="25" y1="34" x2="33" y2="34" stroke="url(#accentGradient)" stroke-width="0.5"/>
+    <line x1="59" y1="30" x2="59" y2="38" stroke="url(#accentGradient)" stroke-width="0.5"/>
+    <line x1="55" y1="34" x2="63" y2="34" stroke="url(#accentGradient)" stroke-width="0.5"/>
+  </g>
+
+  <!-- SK Text -->
+  <g transform="translate(100, 15)">
+    <!-- S -->
+    <path d="M8,8 Q20,8 20,18 Q20,22 15,22 Q10,22 10,26 Q10,30 15,30 Q20,30 20,34 Q20,38 15,38 Q8,38 8,44 Q8,48 15,48 Q22,48 22,42" fill="url(#textGradient)" stroke="none"/>
+    <!-- K -->
+    <g transform="translate(28, 0)">
+      <line x1="8" y1="8" x2="8" y2="48" stroke="url(#textGradient)" stroke-width="10" stroke-linecap="round"/>
+      <line x1="8" y1="28" x2="20" y2="16" stroke="url(#textGradient)" stroke-width="5" stroke-linecap="round"/>
+      <line x1="8" y1="28" x2="20" y2="40" stroke="url(#textGradient)" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Promoters Text -->
+  <text x="100" y="65" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="url(#textGradient)" letter-spacing="1px">PROMOTERS</text>
+
+  <!-- Decorative elements -->
+  <circle cx="290" cy="25" r="4" fill="url(#accentGradient)"/>
+  <circle cx="290" cy="40" r="3" fill="url(#logoGradient)"/>
+  <circle cx="290" cy="55" r="4" fill="url(#accentGradient)"/>
+  <circle cx="305" cy="20" r="2" fill="url(#logoGradient)"/>
+  <circle cx="305" cy="60" r="2" fill="url(#logoGradient)"/>
+</svg>

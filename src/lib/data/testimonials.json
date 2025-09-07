@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Rajesh Kumar",
+    "review": "SK Promoters built our dream home exactly as we envisioned. The quality and attention to detail were outstanding.",
+    "photo": "/images/testimonial1.jpg",
+    "location": "Coimbatore"
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "review": "Exceptional service from start to finish. The team was professional and delivered on time.",
+    "photo": "/images/testimonial2.jpg",
+    "location": "Udumalaipettai"
+  },
+  {
+    "id": 3,
+    "name": "Amit Patel",
+    "review": "Highly recommend SK Promoters. They turned our plot into a beautiful modern home.",
+    "photo": "/images/testimonial3.jpg",
+    "location": "Coimbatore"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Gupta",
+    "review": "The interior design team exceeded our expectations. Our home feels luxurious yet comfortable.",
+    "photo": "/images/testimonial4.jpg",
+    "location": "Udumalaipettai"
+  },
+  {
+    "id": 5,
+    "name": "Vikram Singh",
+    "review": "Great experience working with SK Promoters. Transparent pricing and excellent craftsmanship.",
+    "photo": "/images/testimonial5.jpg",
+    "location": "Coimbatore"
+  }
+]
