@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -10,22 +11,26 @@ import { useTranslations } from "next-intl";
 
 export default function FeaturedProperties() {
   const t = useTranslations('featuredProperties');
+  const pathname = usePathname();
+
+  // Extract locale from pathname (e.g., "/en/about" -> "en")
+  const locale = pathname.split('/')[1] || 'en';
 
   const properties = [
     {
       id: 1,
       key: "modernVilla",
-      image: "/images/project1.jpg"
+      image: "https://placehold.co/600x400?text=Modern+Villa+600x400"
     },
     {
       id: 2,
       key: "luxuryApartment",
-      image: "/images/project2.jpg"
+      image: "https://placehold.co/600x400?text=Luxury+Apartment+600x400"
     },
     {
       id: 3,
       key: "cozyBungalow",
-      image: "/images/project3.jpg"
+      image: "https://placehold.co/600x400?text=Cozy+Bungalow+600x400"
     }
   ];
 
@@ -150,7 +155,7 @@ export default function FeaturedProperties() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center"
         >
-          <Link href="/projects">
+          <Link href={`/${locale}/projects`}>
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 text-lg">
               {t('viewAllProperties')}
             </Button>

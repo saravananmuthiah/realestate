@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -17,14 +18,18 @@ const navItems = [
 
 export default function Navbar() {
   const t = useTranslations("navigation");
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+
+  // Extract locale from pathname (e.g., "/en/about" -> "en")
+  const locale = pathname.split('/')[1] || 'en';
 
   return (
     <nav className="bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-24">
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
+            <Link href={`/${locale}`} className="flex items-center">
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-blue-600 transition-all duration-300">
                 SK Promoters
               </div>
@@ -36,7 +41,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <Link
                 key={item.name}
-                href={item.href}
+                href={`/${locale}${item.href}`}
                 className="relative px-4 py-3 text-gray-600 hover:text-white text-sm font-medium rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:shadow-lg transform hover:scale-105"
               >
                 {t(item.name)}
@@ -67,7 +72,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <Link
                   key={item.name}
-                  href={item.href}
+                  href={`/${locale}${item.href}`}
                   className="block px-4 py-4 text-gray-600 hover:text-white text-base font-medium rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:shadow-md transform hover:scale-105"
                   onClick={() => setIsOpen(false)}
                 >

@@ -89,22 +89,22 @@ export default function Hero() {
             className="grid grid-cols-2 gap-3"
           >
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
-              <Image src="/images/project1.jpg" alt={t('modernVilla')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <Image src="https://placehold.co/400x300?text=Modern+Villa+400x300" alt={t('modernVilla')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
               <h3 className="mt-2 font-semibold text-sm">{t('modernVilla')}</h3>
               <p className="text-xs text-blue-100">{t('locationCoimbatore')}</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 mt-6">
-              <Image src="/images/project2.jpg" alt={t('luxuryApartment')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <Image src="https://placehold.co/400x300?text=Luxury+Apartment+400x300" alt={t('luxuryApartment')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
               <h3 className="mt-2 font-semibold text-sm">{t('luxuryApartment')}</h3>
               <p className="text-xs text-blue-100">{t('locationCoimbatore')}</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
-              <Image src="/images/project3.jpg" alt={t('cozyBungalow')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <Image src="https://placehold.co/400x300?text=Cozy+Bungalow+400x300" alt={t('cozyBungalow')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
               <h3 className="mt-2 font-semibold text-sm">{t('cozyBungalow')}</h3>
               <p className="text-xs text-blue-100">{t('locationUdumalaipettai')}</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 mt-6">
-              <Image src="/images/project4.jpg" alt={t('contemporaryHouse')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <Image src="https://placehold.co/400x300?text=Contemporary+House+400x300" alt={t('contemporaryHouse')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
               <h3 className="mt-2 font-semibold text-sm">{t('contemporaryHouse')}</h3>
               <p className="text-xs text-blue-100">{t('locationCoimbatore')}</p>
             </div>

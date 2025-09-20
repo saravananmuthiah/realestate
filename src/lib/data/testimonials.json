@@ -3,35 +3,35 @@
     "id": 1,
     "name": "Rajesh Kumar",
     "review": "SK Promoters built our dream home exactly as we envisioned. The quality and attention to detail were outstanding.",
-    "photo": "/images/testimonial1.jpg",
+    "photo": "https://placehold.co/400x300?text=Testimonial+1+400x300",
     "location": "Coimbatore"
   },
   {
     "id": 2,
     "name": "Priya Sharma",
     "review": "Exceptional service from start to finish. The team was professional and delivered on time.",
-    "photo": "/images/testimonial2.jpg",
+    "photo": "https://placehold.co/400x300?text=Testimonial+2+400x300",
     "location": "Udumalaipettai"
   },
   {
     "id": 3,
     "name": "Amit Patel",
     "review": "Highly recommend SK Promoters. They turned our plot into a beautiful modern home.",
-    "photo": "/images/testimonial3.jpg",
+    "photo": "https://placehold.co/400x300?text=Testimonial+3+400x300",
     "location": "Coimbatore"
   },
   {
     "id": 4,
     "name": "Sneha Gupta",
     "review": "The interior design team exceeded our expectations. Our home feels luxurious yet comfortable.",
-    "photo": "/images/testimonial4.jpg",
+    "photo": "https://placehold.co/400x300?text=Testimonial+4+400x300",
     "location": "Udumalaipettai"
   },
   {
     "id": 5,
     "name": "Vikram Singh",
     "review": "Great experience working with SK Promoters. Transparent pricing and excellent craftsmanship.",
-    "photo": "/images/testimonial5.jpg",
+    "photo": "https://placehold.co/400x300?text=Testimonial+5+400x300",
     "location": "Coimbatore"
   }
 ]

@@ -9,7 +9,7 @@
     "bedrooms": 4,
     "amenities": ["Private Pool", "24x7 Security", "Smart Home Features", "Garden"],
     "description": "A stunning modern villa featuring contemporary architecture with spacious interiors, perfect for families seeking luxury and comfort in the heart of Coimbatore.",
-    "image": "/images/project1.jpg",
+    "image": "https://placehold.co/800x600?text=Modern+Villa+800x600",
     "highlights": ["4 Bedrooms", "Swimming Pool", "Smart Home Features", "Garden"]
   },
   {
@@ -22,7 +22,7 @@
     "bedrooms": 3,
     "amenities": ["Sea View", "Gym", "Parking", "Fully Furnished"],
     "description": "Experience urban luxury in this premium apartment with breathtaking views, modern amenities, and convenient location in the city center.",
-    "image": "/images/project2.jpg",
+    "image": "https://placehold.co/800x600?text=Luxury+Apartment+800x600",
     "highlights": ["3 Bedrooms", "Sea View", "Gym", "Parking"]
   },
   {
@@ -35,7 +35,7 @@
     "bedrooms": 2,
     "amenities": ["Backyard", "Modular Kitchen", "Solar Panels", "Garden"],
     "description": "A charming bungalow offering peaceful living with modern comforts, surrounded by lush greenery in the serene town of Udumalaipettai.",
-    "image": "/images/project3.jpg",
+    "image": "https://placehold.co/800x600?text=Cozy+Bungalow+800x600",
     "highlights": ["2 Bedrooms", "Backyard", "Modular Kitchen", "Solar Panels"]
   },
   {
@@ -48,7 +48,7 @@
     "bedrooms": 5,
     "amenities": ["Home Theater", "Rooftop Terrace", "Security System", "Garden"],
     "description": "Contemporary design meets functionality in this spacious family home, featuring state-of-the-art amenities and elegant interiors.",
-    "image": "/images/project4.jpg",
+    "image": "https://placehold.co/800x600?text=Contemporary+House+800x600",
     "highlights": ["5 Bedrooms", "Home Theater", "Rooftop Terrace", "Security System"]
   },
   {
@@ -61,7 +61,7 @@
     "bedrooms": 3,
     "amenities": ["Rainwater Harvesting", "Green Roof", "Energy Efficient", "Solar Panels"],
     "description": "Sustainable living at its finest with eco-friendly features, modern design, and energy-efficient systems for conscious homeowners.",
-    "image": "/images/project5.jpg",
+    "image": "https://placehold.co/800x600?text=Eco-Friendly+Home+800x600",
     "highlights": ["3 Bedrooms", "Rainwater Harvesting", "Green Roof", "Energy Efficient"]
   },
   {
@@ -74,7 +74,7 @@
     "bedrooms": 4,
     "amenities": ["Duplex Design", "Balcony", "Community Park", "Parking"],
     "description": "A magnificent duplex offering dual-level living with ample space, modern amenities, and proximity to community facilities.",
-    "image": "/images/project6.jpg",
+    "image": "https://placehold.co/800x600?text=Spacious+Duplex+800x600",
     "highlights": ["4 Bedrooms", "Duplex Design", "Balcony", "Community Park"]
   }
 ]

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const values = [
@@ -23,22 +22,22 @@ const team = [
   {
     name: "Saravanan",
     role: "Founder & CEO",
-    image: "/images/team1.jpg",
+    image: "https://placehold.co/300x400",
   },
   {
     name: "Chellappan",
     role: "Managing Director",
-    image: "/images/team2.jpg",
+    image: "https://placehold.co/300x400",
   },
   {
     name: "Dhimaan Shah",
     role: "Executive Director & Co-CEO",
-    image: "/images/team3.jpg",
+    image: "https://placehold.co/300x400",
   },
   {
     name: "Sneha Gupta",
     role: "Interior Designer",
-    image: "/images/team4.jpg",
+    image: "https://placehold.co/300x400",
   },
 ];
 
@@ -54,12 +53,10 @@ export default function About() {
       >
         {/* Background Image */}
         <div className="absolute inset-0 opacity-20">
-          <Image
-            src="/images/project1.jpg"
+          <img
+            src="https://placehold.co/1200x800"
             alt="Luxury Home"
-            fill
-            className="object-cover"
-            priority
+            className="w-full h-full object-cover"
           />
         </div>
         {/* Animated Background Shapes */}
@@ -198,11 +195,10 @@ export default function About() {
               className="relative"
             >
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/project2.jpg"
+                <img
+                  src="https://placehold.co/800x600"
                   alt="SK Promoters Story"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <motion.div
@@ -483,11 +479,10 @@ export default function About() {
                     transition={{ duration: 0.3 }}
                     className="relative h-64 overflow-hidden"
                   >
-                    <Image
-                      src={`/images/project${(index % 6) + 1}.jpg`}
+                    <img
+                      src={member.image}
                       alt={member.name}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <motion.div

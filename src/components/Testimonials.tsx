@@ -11,7 +11,7 @@ const testimonials = [
     location: "Coimbatore",
     rating: 5,
     project: "Modern Villa in Coimbatore",
-    image: "/images/project1.jpg",
+    image: "https://placehold.co/400x300?text=Rajesh+Kumar+400x300",
     review: "SK Promoters exceeded our expectations in every way. The attention to detail, quality of construction, and timely delivery were outstanding. Our new home is everything we dreamed of and more. The team was professional, responsive, and truly cared about our satisfaction.",
     date: "March 2024"
   },
@@ -21,7 +21,7 @@ const testimonials = [
     location: "Udumalaipettai",
     rating: 5,
     project: "Cozy Bungalow",
-    image: "/images/project3.jpg",
+    image: "https://placehold.co/400x300?text=Priya+Sharma+400x300",
     review: "Choosing SK Promoters was the best decision we made. From the initial consultation to the final handover, every step was handled with utmost care and professionalism. The quality of work is exceptional, and the post-construction support has been fantastic.",
     date: "January 2024"
   },
@@ -31,7 +31,7 @@ const testimonials = [
     location: "Coimbatore",
     rating: 5,
     project: "Luxury Apartment",
-    image: "/images/project2.jpg",
+    image: "https://placehold.co/400x300?text=Arun+Patel+400x300",
     review: "The team at SK Promoters is incredibly talented and dedicated. They transformed our vision into reality with their innovative designs and superior craftsmanship. The entire process was smooth, and we're absolutely delighted with our new home.",
     date: "February 2024"
   },
@@ -41,7 +41,7 @@ const testimonials = [
     location: "Coimbatore",
     rating: 5,
     project: "Modern Villa",
-    image: "/images/project4.jpg",
+    image: "https://placehold.co/400x300?text=Meera+Iyer+400x300",
     review: "What sets SK Promoters apart is their commitment to quality and customer satisfaction. Every detail was carefully considered, and the result is a beautiful home that we love coming back to. Highly recommended!",
     date: "December 2023"
   }

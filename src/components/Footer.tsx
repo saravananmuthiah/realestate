@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -30,7 +31,11 @@ const socialLinks = [
 ];
 
 export default function Footer() {
-  const t = useTranslations('footer');
+  const t = useTranslations("footer");
+  const pathname = usePathname();
+
+  // Extract locale from pathname (e.g., "/en/about" -> "en")
+  const locale = pathname.split('/')[1] || 'en';
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -62,7 +67,7 @@ export default function Footer() {
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <Link
-                    href={link.href}
+                    href={`/${locale}${link.href}`}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     {t(link.name)}
@@ -79,7 +84,7 @@ export default function Footer() {
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <Link
-                    href={link.href}
+                    href={`/${locale}${link.href}`}
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     {t(link.name)}
@@ -108,7 +113,7 @@ export default function Footer() {
             </div>
             <div className="mt-4">
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors"
               >
                 {t('getInTouch')}

@@ -46,10 +46,12 @@ export default function Testimonials() {
                           &ldquo;{testimonial.review}&rdquo;
                         </blockquote>
                         <div className="flex items-center justify-center space-x-4">
-                          <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
-                            <span className="text-lg font-bold text-gray-600">
-                              {testimonial.name.split(' ').map(n => n[0]).join('')}
-                            </span>
+                          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-gray-200">
+                            <img
+                              src={testimonial.photo}
+                              alt={testimonial.name}
+                              className="w-full h-full object-cover"
+                            />
                           </div>
                           <div>
                             <p className="font-semibold text-gray-900">{testimonial.name}</p>
