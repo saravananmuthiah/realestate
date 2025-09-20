@@ -2,47 +2,37 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const features = [
-  {
-    icon: "🏠",
-    title: "Premium Quality Construction",
-    description: "We use only the finest materials and construction techniques to ensure your home stands the test of time.",
-    details: ["High-grade materials", "Expert craftsmanship", "Quality assurance"]
-  },
-  {
-    icon: "🎨",
-    title: "Customized Interior Design",
-    description: "Personalized interior design services to create spaces that reflect your unique style and personality.",
-    details: ["Custom layouts", "Premium finishes", "Designer consultation"]
-  },
-  {
-    icon: "🛡️",
-    title: "24/7 Security & Maintenance",
-    description: "Round-the-clock security services and comprehensive maintenance support for peace of mind.",
-    details: ["24/7 security guards", "Regular maintenance", "Emergency support"]
-  },
-  {
-    icon: "🌿",
-    title: "Sustainable & Eco-Friendly",
-    description: "Environmentally conscious construction practices that minimize our carbon footprint.",
-    details: ["Solar panels", "Water conservation", "Green materials"]
-  },
-  {
-    icon: "📍",
-    title: "Prime Locations",
-    description: "Strategic locations in Coimbatore and Udumalaipettai with excellent connectivity and amenities.",
-    details: ["Coimbatore access", "Udumalaipettai proximity", "Infrastructure"]
-  },
-  {
-    icon: "🤝",
-    title: "End-to-End Support",
-    description: "Complete project management from planning to handover, ensuring a seamless experience.",
-    details: ["Project management", "Legal assistance", "Post-construction support"]
-  }
-];
+import { useTranslations } from "next-intl";
 
 export default function WhyChooseUs() {
+  const t = useTranslations('whyChooseUs');
+
+  const features = [
+    {
+      key: "premiumQuality",
+      icon: "�"
+    },
+    {
+      key: "customizedDesign",
+      icon: "🎨"
+    },
+    {
+      key: "securityMaintenance",
+      icon: "🛡️"
+    },
+    {
+      key: "sustainable",
+      icon: "🌿"
+    },
+    {
+      key: "primeLocations",
+      icon: "📍"
+    },
+    {
+      key: "endToEndSupport",
+      icon: "🤝"
+    }
+  ];
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,10 +43,10 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why Choose SK Promoters?
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the difference with our commitment to excellence, innovation, and customer satisfaction
+            {t('subtitle')}
           </p>
           <motion.div
             initial={{ width: 0 }}
@@ -86,15 +76,15 @@ export default function WhyChooseUs() {
                     {feature.icon}
                   </motion.div>
                   <CardTitle className="text-xl text-gray-900 mb-2">
-                    {feature.title}
+                    {t(`features.${feature.key}.title`)}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4 text-center leading-relaxed">
-                    {feature.description}
+                    {t(`features.${feature.key}.description`)}
                   </p>
                   <ul className="space-y-2">
-                    {feature.details.map((detail, idx) => (
+                    {t.raw(`features.${feature.key}.details`).map((detail: string, idx: number) => (
                       <motion.li
                         key={idx}
                         initial={{ opacity: 0, x: -20 }}

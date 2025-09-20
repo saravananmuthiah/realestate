@@ -7,8 +7,10 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+  const t = useTranslations('hero');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -22,61 +24,60 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Your Dream Home Awaits in Coimbatore
+              {t('title')}
             </h1>
             <p className="text-lg mb-6 text-blue-100 max-w-2xl">
-              Discover premium residential properties crafted with excellence. From modern villas to contemporary homes,
-              we build quality living spaces that blend luxury, comfort, and sustainability in Coimbatore and Udumalaipettai.
+              {t('subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
                 <DialogTrigger asChild>
                   <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                    Book Consultation
+                    {t('bookConsultation')}
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>Book Your Property Consultation</DialogTitle>
+                    <DialogTitle>{t('consultationTitle')}</DialogTitle>
                     <DialogDescription>
-                      Connect with our real estate experts to find your perfect home in Coimbatore and Udumalaipettai. We&apos;ll help you discover properties that match your lifestyle and budget.
+                      {t('consultationDescription')}
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
                     <div className="grid grid-cols-4 items-center gap-4">
                       <label htmlFor="name" className="text-right">
-                        Name
+                        {t('name')}
                       </label>
-                      <Input id="name" placeholder="Your name" className="col-span-3" />
+                      <Input id="name" placeholder={t('namePlaceholder')} className="col-span-3" />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
                       <label htmlFor="email" className="text-right">
-                        Email
+                        {t('email')}
                       </label>
-                      <Input id="email" type="email" placeholder="your@email.com" className="col-span-3" />
+                      <Input id="email" type="email" placeholder={t('emailPlaceholder')} className="col-span-3" />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
                       <label htmlFor="phone" className="text-right">
-                        Phone
+                        {t('phone')}
                       </label>
-                      <Input id="phone" placeholder="Your phone number" className="col-span-3" />
+                      <Input id="phone" placeholder={t('phonePlaceholder')} className="col-span-3" />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
                       <label htmlFor="message" className="text-right">
-                        Message
+                        {t('message')}
                       </label>
-                      <Textarea id="message" placeholder="Tell us about your property requirements, preferred locations, and budget range" className="col-span-3" />
+                      <Textarea id="message" placeholder={t('messagePlaceholder')} className="col-span-3" />
                     </div>
                   </div>
                   <div className="flex justify-end">
                     <Button type="submit" onClick={() => setIsModalOpen(false)} className="bg-blue-600 hover:bg-blue-700">
-                      Send Message
+                      {t('sendMessage')}
                     </Button>
                   </div>
                 </DialogContent>
               </Dialog>
               <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                View Projects
+                {t('viewProjects')}
               </Button>
             </div>
           </motion.div>
@@ -88,24 +89,24 @@ export default function Hero() {
             className="grid grid-cols-2 gap-3"
           >
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
-              <Image src="/images/project1.jpg" alt="Modern Villa" width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
-              <h3 className="mt-2 font-semibold text-sm">Modern Villa</h3>
-              <p className="text-xs text-blue-100">Coimbatore</p>
+              <Image src="/images/project1.jpg" alt={t('modernVilla')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <h3 className="mt-2 font-semibold text-sm">{t('modernVilla')}</h3>
+              <p className="text-xs text-blue-100">{t('locationCoimbatore')}</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 mt-6">
-              <Image src="/images/project2.jpg" alt="Luxury Apartment" width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
-              <h3 className="mt-2 font-semibold text-sm">Luxury Apartment</h3>
-              <p className="text-xs text-blue-100">Coimbatore</p>
+              <Image src="/images/project2.jpg" alt={t('luxuryApartment')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <h3 className="mt-2 font-semibold text-sm">{t('luxuryApartment')}</h3>
+              <p className="text-xs text-blue-100">{t('locationCoimbatore')}</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
-              <Image src="/images/project3.jpg" alt="Cozy Bungalow" width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
-              <h3 className="mt-2 font-semibold text-sm">Cozy Bungalow</h3>
-              <p className="text-xs text-blue-100">Udumalaipettai</p>
+              <Image src="/images/project3.jpg" alt={t('cozyBungalow')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <h3 className="mt-2 font-semibold text-sm">{t('cozyBungalow')}</h3>
+              <p className="text-xs text-blue-100">{t('locationUdumalaipettai')}</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 mt-6">
-              <Image src="/images/project4.jpg" alt="Contemporary House" width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
-              <h3 className="mt-2 font-semibold text-sm">Contemporary House</h3>
-              <p className="text-xs text-blue-100">Coimbatore</p>
+              <Image src="/images/project4.jpg" alt={t('contemporaryHouse')} width={400} height={96} className="w-full h-24 object-cover rounded" unoptimized />
+              <h3 className="mt-2 font-semibold text-sm">{t('contemporaryHouse')}</h3>
+              <p className="text-xs text-blue-100">{t('locationCoimbatore')}</p>
             </div>
           </motion.div>
         </div>

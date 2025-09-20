@@ -3,83 +3,85 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const services = [
   {
     icon: "🏗️",
-    title: "Custom Home Construction",
-    description: "End-to-end construction services for your dream home with personalized design and premium quality materials.",
+    titleKey: "customHomeConstruction",
+    descriptionKey: "customHomeDescription",
     features: [
-      "Architectural design consultation",
-      "Custom floor plans",
-      "Premium material selection",
-      "Quality construction management"
+      "architecturalDesignConsultation",
+      "customFloorPlans",
+      "premiumMaterialSelection",
+      "qualityConstructionManagement"
     ],
     popular: true
   },
   {
     icon: "🏘️",
-    title: "Villa Development",
-    description: "Specialized in luxury villa construction with modern amenities and sustainable design principles.",
+    titleKey: "villaDevelopment",
+    descriptionKey: "villaDescription",
     features: [
-      "Luxury villa designs",
-      "Swimming pool construction",
-      "Landscaping services",
-      "Smart home integration"
+      "luxuryVillaDesigns",
+      "swimmingPoolConstruction",
+      "landscapingServices",
+      "smartHomeIntegration"
     ],
     popular: true
   },
   {
     icon: "🏢",
-    title: "Apartment Complexes",
-    description: "Modern apartment construction with world-class amenities and community living spaces.",
+    titleKey: "architecturalDesign",
+    descriptionKey: "architecturalDescription",
     features: [
-      "Multi-unit complexes",
-      "Common area development",
-      "Security systems",
-      "Maintenance services"
+      "innovativeDesignSolutions",
+      "sustainableArchitecture",
+      "3dVisualization",
+      "buildingPermits"
     ],
     popular: false
   },
   {
     icon: "🔄",
-    title: "Renovation & Remodeling",
-    description: "Transform your existing space with our expert renovation services and modern design solutions.",
+    titleKey: "projectManagement",
+    descriptionKey: "projectDescription",
     features: [
-      "Interior renovations",
-      "Exterior makeovers",
-      "Kitchen & bathroom remodeling",
-      "Space optimization"
+      "timelineManagement",
+      "budgetControl",
+      "qualityAssurance",
+      "regularUpdates"
     ],
     popular: false
   },
   {
     icon: "🎨",
-    title: "Interior Design",
-    description: "Complete interior design services from concept to completion with premium finishes and furnishings.",
+    titleKey: "interiorDesign",
+    descriptionKey: "interiorDescription",
     features: [
-      "Space planning",
-      "Material selection",
-      "Furniture design",
-      "Lighting solutions"
+      "spacePlanning",
+      "materialSelection",
+      "colorSchemes",
+      "furnitureLayout"
     ],
     popular: true
   },
   {
     icon: "🛠️",
-    title: "Property Maintenance",
-    description: "Comprehensive maintenance services to keep your property in perfect condition year-round.",
+    titleKey: "consultationServices",
+    descriptionKey: "consultationDescription",
     features: [
-      "Regular inspections",
-      "Repair services",
-      "Preventive maintenance",
-      "Emergency support"
+      "propertyAnalysis",
+      "investmentGuidance",
+      "marketInsights",
+      "legalSupport"
     ],
     popular: false
   }
 ];
 
 export default function Services() {
+  const t = useTranslations('services');
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,10 +92,10 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Services
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive real estate solutions tailored to your needs, from construction to maintenance
+            {t('subtitle')}
           </p>
           <motion.div
             initial={{ width: 0 }}
@@ -115,7 +117,7 @@ export default function Services() {
             >
               {service.popular && (
                 <div className="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold z-10">
-                  Popular
+                  {t('popular')}
                 </div>
               )}
 
@@ -130,16 +132,16 @@ export default function Services() {
                     {service.icon}
                   </motion.div>
                   <CardTitle className="text-xl text-gray-900 mb-2">
-                    {service.title}
+                    {t(service.titleKey)}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-6 text-center leading-relaxed">
-                    {service.description}
+                    {t(service.descriptionKey)}
                   </p>
 
                   <div className="mb-6">
-                    <h4 className="text-sm font-semibold text-gray-700 mb-3">What&apos;s Included:</h4>
+                    <h4 className="text-sm font-semibold text-gray-700 mb-3">{t('whatsIncluded')}</h4>
                     <ul className="space-y-2">
                       {service.features.map((feature, idx) => (
                         <motion.li
@@ -150,7 +152,7 @@ export default function Services() {
                           className="flex items-center text-sm text-gray-700"
                         >
                           <span className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mr-3 flex-shrink-0"></span>
-                          {feature}
+                          {t(feature)}
                         </motion.li>
                       ))}
                     </ul>
@@ -177,13 +179,13 @@ export default function Services() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-2xl p-8 mb-12"
         >
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Our Process</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">{t('ourProcess.title')}</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
-              { step: "01", title: "Consultation", desc: "We understand your vision and requirements" },
-              { step: "02", title: "Design", desc: "Create detailed plans and 3D visualizations" },
-              { step: "03", title: "Construction", desc: "Expert execution with quality assurance" },
-              { step: "04", title: "Handover", desc: "Final inspection and property handover" }
+              { step: "01", title: t('ourProcess.consultation.title'), desc: t('ourProcess.consultation.description') },
+              { step: "02", title: t('ourProcess.design.title'), desc: t('ourProcess.design.description') },
+              { step: "03", title: t('ourProcess.construction.title'), desc: t('ourProcess.construction.description') },
+              { step: "04", title: t('ourProcess.handover.title'), desc: t('ourProcess.handover.description') }
             ].map((process, index) => (
               <motion.div
                 key={index}
@@ -210,16 +212,16 @@ export default function Services() {
           className="text-center"
         >
           <div className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
+            <h3 className="text-2xl font-bold mb-4">{t('readyToStart.title')}</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Let&apos;s discuss your dream project and create something extraordinary together.
+              {t('readyToStart.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold">
-                Schedule Consultation
+                {t('readyToStart.scheduleConsultation')}
               </Button>
               <Button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full font-semibold">
-                View Portfolio
+                {t('readyToStart.viewPortfolio')}
               </Button>
             </div>
           </div>

@@ -1,19 +1,22 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navItems = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Services", href: "/services" },
-  { name: "Testimonials", href: "/testimonials" },
-  { name: "Contact", href: "/contact" },
+  { name: "home", href: "/" },
+  { name: "about", href: "/about" },
+  { name: "projects", href: "/projects" },
+  { name: "services", href: "/services" },
+  { name: "testimonials", href: "/testimonials" },
+  { name: "contact", href: "/contact" },
 ];
 
 export default function Navbar() {
+  const t = useTranslations("navigation");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -36,19 +39,24 @@ export default function Navbar() {
                 href={item.href}
                 className="relative px-4 py-3 text-gray-600 hover:text-white text-sm font-medium rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:shadow-lg transform hover:scale-105"
               >
-                {item.name}
+                {t(item.name)}
               </Link>
             ))}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="p-3 text-gray-600 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 rounded-lg transition-all duration-300 hover:shadow-lg"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+          {/* Language Switcher and Mobile menu button */}
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:block">
+              <LanguageSwitcher />
+            </div>
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-3 text-gray-600 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 rounded-lg transition-all duration-300 hover:shadow-lg"
+              >
+                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -63,9 +71,12 @@ export default function Navbar() {
                   className="block px-4 py-4 text-gray-600 hover:text-white text-base font-medium rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:shadow-md transform hover:scale-105"
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.name}
+                  {t(item.name)}
                 </Link>
               ))}
+              <div className="pt-4 border-t border-gray-200">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}

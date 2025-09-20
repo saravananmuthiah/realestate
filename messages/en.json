@@ -1,0 +1,211 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Your Dream Home Awaits in Coimbatore",
+    "subtitle": "Discover premium residential properties crafted with excellence. From modern villas to contemporary homes, we build quality living spaces that blend luxury, comfort, and sustainability in Coimbatore and Udumalaipettai.",
+    "bookConsultation": "Book Consultation",
+    "viewProjects": "View Projects",
+    "consultationTitle": "Book Your Property Consultation",
+    "consultationDescription": "Connect with our real estate experts to find your perfect home in Coimbatore and Udumalaipettai. We'll help you discover properties that match your lifestyle and budget.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "phonePlaceholder": "Your phone number",
+    "messagePlaceholder": "Tell us about your property requirements, preferred locations, and budget range",
+    "sendMessage": "Send Message",
+    "modernVilla": "Modern Villa",
+    "luxuryApartment": "Luxury Apartment",
+    "cozyBungalow": "Cozy Bungalow",
+    "contemporaryHouse": "Contemporary House",
+    "locationCoimbatore": "Coimbatore",
+    "locationUdumalaipettai": "Udumalaipettai"
+  },
+  "language": {
+    "english": "English",
+    "tamil": "தமிழ்"
+  },
+  "footer": {
+    "companyName": "SK Promoters",
+    "companyDescription": "Building Dreams into Homes. Specializing in beautiful individual houses with exceptional quality and design.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "getInTouch": "Get In Touch",
+    "aboutUs": "About Us",
+    "projects": "Projects",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contactUs": "Contact Us",
+    "scheduleVisit": "Schedule Visit",
+    "architectureDesign": "Architecture Design",
+    "construction": "Construction",
+    "interiorDesign": "Interior Design",
+    "customVillas": "Custom Villas",
+    "copyright": "© 2025 SK Promoters. All rights reserved.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "phoneNumber": "+91 8667475204",
+    "emailAddress": "info@skpromoters.com",
+    "location": "Coimbatore, Tamil Nadu",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "instagram": "Instagram"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive real estate solutions tailored to your needs",
+    "customHomeConstruction": "Custom Home Construction",
+    "customHomeDescription": "End-to-end construction services for your dream home with personalized design and premium quality materials.",
+    "villaDevelopment": "Villa Development",
+    "villaDescription": "Specialized in luxury villa construction with modern amenities and sustainable design principles.",
+    "architecturalDesign": "Architectural Design",
+    "architecturalDescription": "Professional architectural services with innovative designs that blend functionality and aesthetics.",
+    "interiorDesign": "Interior Design",
+    "interiorDescription": "Complete interior design solutions to transform your space into a beautiful and functional environment.",
+    "projectManagement": "Project Management",
+    "projectDescription": "Expert project management ensuring timely delivery and quality control throughout the construction process.",
+    "consultationServices": "Consultation Services",
+    "consultationDescription": "Professional consultation for property development, investment opportunities, and real estate guidance.",
+    "architecturalDesignConsultation": "Architectural design consultation",
+    "customFloorPlans": "Custom floor plans",
+    "premiumMaterialSelection": "Premium material selection",
+    "qualityConstructionManagement": "Quality construction management",
+    "luxuryVillaDesigns": "Luxury villa designs",
+    "swimmingPoolConstruction": "Swimming pool construction",
+    "landscapingServices": "Landscaping services",
+    "smartHomeIntegration": "Smart home integration",
+    "innovativeDesignSolutions": "Innovative design solutions",
+    "sustainableArchitecture": "Sustainable architecture",
+    "3dVisualization": "3D visualization",
+    "buildingPermits": "Building permits assistance",
+    "spacePlanning": "Space planning and optimization",
+    "materialSelection": "Material selection guidance",
+    "colorSchemes": "Color schemes and themes",
+    "furnitureLayout": "Furniture layout design",
+    "timelineManagement": "Timeline management",
+    "budgetControl": "Budget control and optimization",
+    "qualityAssurance": "Quality assurance",
+    "regularUpdates": "Regular progress updates",
+    "propertyAnalysis": "Property analysis and valuation",
+    "investmentGuidance": "Investment guidance",
+    "marketInsights": "Market insights and trends",
+    "legalSupport": "Legal support and documentation",
+    "popular": "Popular",
+    "whatsIncluded": "What's Included:",
+    "ourProcess": {
+      "title": "Our Process",
+      "consultation": {
+        "title": "Consultation",
+        "description": "We understand your vision and requirements"
+      },
+      "design": {
+        "title": "Design", 
+        "description": "Create detailed plans and 3D visualizations"
+      },
+      "construction": {
+        "title": "Construction",
+        "description": "Expert execution with quality assurance"
+      },
+      "handover": {
+        "title": "Handover",
+        "description": "Final inspection and property handover"
+      }
+    },
+    "readyToStart": {
+      "title": "Ready to Start Your Project?",
+      "subtitle": "Let's discuss your dream project and create something extraordinary together.",
+      "scheduleConsultation": "Schedule Consultation",
+      "viewPortfolio": "View Portfolio"
+    }
+  },
+  "featuredProperties": {
+    "title": "Featured Properties",
+    "subtitle": "Discover our most exclusive and sought-after properties in prime locations",
+    "viewDetails": "View Details",
+    "contactUs": "Contact Us",
+    "properties": {
+      "modernVilla": {
+        "title": "Modern Villa in Coimbatore",
+        "location": "Coimbatore, Tamil Nadu",
+        "priceRange": "₹50L - ₹80L",
+        "plotSize": "2400 sq ft",
+        "builtArea": "3200 sq ft",
+        "bedrooms": "4",
+        "highlights": ["Swimming Pool", "Smart Home Features", "Garden"],
+        "status": "Ready to Move"
+      },
+      "luxuryApartment": {
+        "title": "Luxury Apartment Complex",
+        "location": "Coimbatore, Tamil Nadu",
+        "priceRange": "₹1Cr - ₹2Cr",
+        "plotSize": "N/A",
+        "builtArea": "2500 sq ft",
+        "bedrooms": "3",
+        "highlights": ["Modern Amenities", "24x7 Security", "Parking"],
+        "status": "Under Construction"
+      },
+      "cozyBungalow": {
+        "title": "Cozy Bungalow in Udumalaipettai",
+        "location": "Udumalaipettai, Tamil Nadu",
+        "priceRange": "₹35L - ₹55L",
+        "plotSize": "1800 sq ft",
+        "builtArea": "2200 sq ft",
+        "bedrooms": "3",
+        "highlights": ["Peaceful Location", "Garden", "Modular Kitchen"],
+        "status": "Ready to Move"
+      }
+    },
+    "viewAllProperties": "View All Properties",
+    "plotSize": "Plot Size:",
+    "builtArea": "Built Area:",
+    "bedrooms": "Bedrooms:",
+    "location": "Location:",
+    "highlights": "Highlights:"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose SK Promoters?",
+    "subtitle": "Experience the difference with our commitment to excellence, innovation, and customer satisfaction",
+    "features": {
+      "premiumQuality": {
+        "title": "Premium Quality Construction",
+        "description": "We use only the finest materials and construction techniques to ensure your home stands the test of time.",
+        "details": ["High-grade materials", "Expert craftsmanship", "Quality assurance"]
+      },
+      "customizedDesign": {
+        "title": "Customized Interior Design",
+        "description": "Personalized interior design services to create spaces that reflect your unique style and personality.",
+        "details": ["Custom layouts", "Premium finishes", "Designer consultation"]
+      },
+      "securityMaintenance": {
+        "title": "24/7 Security & Maintenance",
+        "description": "Round-the-clock security services and comprehensive maintenance support for peace of mind.",
+        "details": ["24/7 security guards", "Regular maintenance", "Emergency support"]
+      },
+      "sustainable": {
+        "title": "Sustainable & Eco-Friendly",
+        "description": "Environmentally conscious construction practices that minimize our carbon footprint.",
+        "details": ["Solar panels", "Water conservation", "Green materials"]
+      },
+      "primeLocations": {
+        "title": "Prime Locations",
+        "description": "Strategic locations in Coimbatore and Udumalaipettai with excellent connectivity and amenities.",
+        "details": ["Coimbatore access", "Udumalaipettai proximity", "Infrastructure"]
+      },
+      "endToEndSupport": {
+        "title": "End-to-End Support",
+        "description": "Complete project management from planning to handover, ensuring a seamless experience.",
+        "details": ["Project management", "Legal assistance", "Post-construction support"]
+      }
+    }
+  }
+}
